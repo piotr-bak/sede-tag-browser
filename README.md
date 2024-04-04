@@ -1,30 +1,27 @@
-# React + TypeScript + Vite
+# Piotr Kulcenty Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a portfolio website showcasing works of Piotr Kulcenty, violin maker and instrument restorer based in London.
+The design was created by [Mariana Alcobia](https://marianaalcobia.com/) from Construct London design studio (shared with Client's permission).
 
-Currently, two official plugins are available:
+## Why is it here?
+Because "there's more to it than meets the eye". 
+Image-centric design, the requirement for a pixel-perfect implementation as well as the Client's desire for highest image quality possible - turned into a journey in search of every milisecond to shave on my side.
+All of it - pre-loads, lazy-loads, user action predicting, some clever image hashes, you name it - worked in the end. Despite image filesizes being over what I would call "desirable" in other circumstances - the Google Lighthouse score remains on the happy side.
+The design is also modular and crafted with a possibility of a future extension in mind. 
+Despite looking deceptively simple, almost every element of the interface can be customized, and new elements (such as new instruments in the gallery) can be added with very little effort. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## How to check it out on your own machine?
 
-## Expanding the ESLint configuration
+Nothing fancy really, just pick up your favorite package manager (in my case it is pnpm) and fire "as usuall":
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+pnpm install
+pnpm run dev
 ```
+If you prefer other methods: 
+```bash
+npm ci
+npm start
+```
+will work just fine too.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
