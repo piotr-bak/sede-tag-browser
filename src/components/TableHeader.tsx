@@ -1,11 +1,12 @@
 import { Skeleton, TableCell, TableHead, TableRow, TableSortLabel } from "@mui/material";
+import { TableHeaderProps } from "../types";
 
 const headerCells = [
     { id: "name", label: "tag name" },
     { id: "count", label: "count" },
 ];
 
-export function TableHeader( { handleSort, order, orderBy, data, isPending } ) {
+export function TableHeader( { handleSort, order, orderBy, data, isPending }: TableHeaderProps ) {
     return (
         <TableHead>
             <TableRow sx={{ textTransform: "uppercase" }}>

@@ -32,6 +32,7 @@ export function DataTable() {
     const [queryParams, setQueryParams] = useState<TagQueryParams>( {
         pagesize: "10",
         page: 1,
+        key: 'uevH8bifoMt3WZwRr4V3sQ((',
         site: "stackoverflow",
     } );
     const { data, isError, isPending, isPlaceholderData } = useTagData( ENDPOINT, queryParams );

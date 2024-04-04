@@ -15,5 +15,6 @@ export interface TagQueryParams {
         | "month"
         | "popular";
     inname?: string;
+    key?: string;
     site: string;
 }
